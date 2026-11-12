@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Learnet Institute Form</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#ece7f7;
+    display:flex;
+    justify-content:center;
+    padding:20px 0;
+}
+
+.form-container{
+    width:390px;
+}
+
+.card{
+    background:#fff;
+    border-radius:8px;
+    margin-bottom:14px;
+    padding:18px;
+    box-shadow:0 1px 2px rgba(0,0,0,0.08);
+}
+
+.top-header{
+    border-top:12px solid #673ab7;
+}
+
+.title{
+    font-size:34px;
+    font-weight:700;
+    color:#333;
+    line-height:1.2;
+    margin-bottom:15px;
+}
+
+.info{
+    font-size:13px;
+    color:#444;
+    line-height:1.7;
+}
+
+.info a{
+    color:#673ab7;
+    text-decoration:none;
+}
+
+.required{
+    color:red;
+}
+
+.select-course{
+    background:#673ab7;
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+    text-align:center;
+    padding:14px;
+    border-radius:6px;
+    margin-bottom:15px;
+}
+
+.small-text{
+    font-size:12px;
+    color:#444;
+    margin-bottom:10px;
+}
+
+.field-title{
+    font-size:15px;
+    font-weight:600;
+    color:#222;
+    margin-bottom:16px;
+}
+
+input,
+select{
+    width:100%;
+    border:none;
+    border-bottom:2px solid #d32f2f;
+    padding:10px 2px;
+    font-size:14px;
+    outline:none;
+    background:transparent;
+}
+
+select{
+    color:#666;
+}
+
+.error{
+    margin-top:10px;
+    color:#d32f2f;
+    font-size:12px;
+}
+
+.footer-btn{
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
+}
+
+.btn{
+    background:#673ab7;
+    color:#fff;
+    border:none;
+    padding:10px 22px;
+    border-radius:4px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.clear{
+    color:#673ab7;
+    font-size:14px;
+    align-self:center;
+    cursor:pointer;
+}
+
+.google-form{
+    text-align:center;
+    color:#666;
+    font-size:14px;
+    margin-top:25px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="form-container">
+
+    <!-- TOP -->
+    <div class="card top-header">
+
+        <div class="title">
+            Learnet Institute of <br>
+            Skills - Berhampore
+        </div>
+
+        <div class="info">
+          <br><br>
+
+            “The Future Begins Here”<br>
+            20 years experienced institute.<br><br>
+
+            <span class="required">*</span> Indicates required question
+        </div>
+
+    </div>
+
+    <!-- SELECT COURSE -->
+    <div class="select-course">
+        Select Course
+    </div>
+
+    <!-- COURSE -->
+    <div class="card">
+        <div class="small-text">
+            SME | PM Vishwakarma | PM Dakshta Yojna
+        </div>
+
+        <div class="field-title">
+            Apply for which course <span class="required">*</span>
+        </div>
+
+        <select>
+            <option>Choose</option>
+            <option>Food Production & Kitchen (NSQF Level-1)</option>
+           <option>Barber (NSQF Level-1)</option>
+            <option>Carpenter (NSQF Level-1)</option>
+        </select>
+    </div>
+
+    <!-- REFERENCE -->
+    <div class="card">
+        <div class="field-title">
+            Reference Name (Candidate recommendation Help this field)
+        </div>
+
+        <input type="text" placeholder="Your answer">
+    </div>
+
+    <!-- FULL NAME -->
+    <div class="card">
+        <div class="field-title">
+            Your Full Name (as per Aadhaar) <span class="required">*</span>
+        </div>
+
+        <input type="text" placeholder="Your answer">
+
+        <div class="error">
+            ⚠ This is a required question
+        </div>
+    </div>
+
+    <!-- GENDER -->
+    <div class="card">
+        <div class="field-title">
+            Gender <span class="required">*</span>
+        </div>
+
+        <select>
+            <option>Choose</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select>
+
+        <div class="error">
+            ⚠ This is a required question
+        </div>
+    </div>
+
+    <!-- DOB -->
+    <div class="card">
+        <div class="field-title">
+            Date of Birth <span class="required">*</span>
+        </div>
+
+        <input type="date">
+
+        <div class="error">
+            ⚠ This is a required question
+        </div>
+    </div>
+
+    <!-- MOBILE -->
+    <div class="card">
+        <div class="field-title">
+            Your Mobile Number <span class="required">*</span>
+        </div>
+
+        <input type="number" placeholder="Your answer">
+
+        <div class="error">
+            ⚠ This is a required question
+        </div>
+    </div>
+
+    <!-- WHATSAPP -->
+    <div class="card">
+        <div class="field-title">
+            Whatsapp Number <span class="required">*</span>
+        </div>
+
+        <input type="number" placeholder="Your answer">
+
+        <div class="error">
+            ⚠ This is a required question
+        </div>
+    </div>
+
+    <!-- EMAIL -->
+    <div class="card">
+        <div class="field-title">
+            Email ID <span class="required">*</span>
+        </div>
+
+        <input type="email" placeholder="Your answer">
+
+        <div class="error">
+            ⚠ This is a required question
+        </div>
+    </div>
+
+    <!-- AADHAAR -->
+    <div class="card">
+        <div class="field-title">
+            Aadhaar Number <span class="required">*</span>
+        </div>
+
+        <input type="number" placeholder="Your answer">
+
+        <div class="error">
+            ⚠ This is a required question
+        </div>
+    </div>
+
+    <!-- FATHER -->
+    <div class="card">
+        <div class="field-title">
+            Father's Name <span class="required">*</span>
+        </div>
+
+        <input type="text" placeholder="Your answer">
+
+        <div class="error">
+            ⚠ This is a required question
+        </div>
+    </div>
+
+    <!-- MOTHER -->
+    <div class="card">
+        <div class="field-title">
+            Mother's Name <span class="required">*</span>
+        </div>
+
+        <input type="text" placeholder="Your answer">
+
+        <div class="error">
+            ⚠ This is a required question
+        </div>
+    </div>
+
+    <!-- MARITAL -->
+    <div class="card">
+        <div class="field-title">
+            Marital Status <span class="required">*</span>
+        </div>
+
+        <select>
+            <option>Choose</option>
+            <option>Single</option>
+            <option>Married</option>
+        </select>
+
+        <div class="error">
+            ⚠ This is a required question
+        </div>
+    </div>
+
+    <!-- RELIGION -->
+    <div class="card">
+        <div class="field-title">
+            Religion <span class="required">*</span>
+        </div>
+
+        <select>
+            <option>Choose</option>
+            <option>Hindu</option>
+            <option>Muslim</option>
+            <option>Christian</option>
+        </select>
+
+        <div class="error">
+            ⚠ This is a required question
+        </div>
+    </div>
+
+    <!-- CASTE -->
+    <div class="card">
+        <div class="field-title">
+            Caste <span class="required">*</span>
+        </div>
+
+        <select>
+            <option>Choose</option>
+            <option>General</option>
+            <option>SC</option>
+            <option>ST</option>
+            <option>OBC</option>
+        </select>
+
+        <div class="error">
+            ⚠ This is a required question
+        </div>
+    </div>
+
+    <!-- QUALIFICATION -->
+    <div class="card">
+        <div class="field-title">
+            Your Last Educational Qualification <span class="required">*</span>
+        </div>
+
+        <input type="text" placeholder="Your answer">
+
+        <div class="error">
+            ⚠ This is a required question
+        </div>
+
+        <div class="footer-btn">
+            <button class="btn">Back</button>
+            <button class="btn">Next</button>
+            <div class="clear">Clear form</div>
+        </div>
+
+    </div>
+
+    <div class="google-form">
+        Google Forms
+    </div>
+
+</div>
+
+</body>
+</html>
